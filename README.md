@@ -47,24 +47,24 @@ int main() {
 
     // Создание пользовательского паука с помощью ввода данных
     Spider user_spider;
-    std::cout << "Create your own spider:\n";
+    std::cout << "\nCreate your own spider:\n";
 
-    std::cout << "Enter spider name: ";
+    std::cout << "\tEnter spider name: ";
     std::cin >> user_spider.name;
 
-    std::cout << "Enter spider sex: ";
+    std::cout << "\tEnter spider sex: ";
     std::cin >> user_spider.sex;
 
-    std::cout << "Enter spider width (x): ";
+    std::cout << "\tEnter spider width (x): ";
     std::cin >> user_spider.x;
 
-    std::cout << "Enter spider height (y): ";
+    std::cout << "\tEnter spider height (y): ";
     std::cin >> user_spider.y;
 
-    std::cout << "Enter spider age: ";
+    std::cout << "\tEnter spider age: ";
     std::cin >> user_spider.age;
 
-    std::cout << "Your spider info:\n";
+    std::cout << "\nYour spider info:\n";
     print_spider_info(user_spider);
 
     return 0;
@@ -90,17 +90,19 @@ Wasm-Spider
         Sex-Pol Male
         Spider x and y 4.5-5.2
         Spider age 1
+
 Create your own spider:
-Enter spider name: Ed
-Enter spider sex: Male
-Enter spider width (x): 10.8
-Enter spider height (y): 18.5
-Enter spider age: 4
+        Enter spider name: Wannesa
+        Enter spider sex: Female
+        Enter spider width (x): 10.2
+        Enter spider height (y): 18.8
+        Enter spider age: 8
+
 Your spider info:
-        Name this spider is Ed
-        Sex-Pol Male
-        Spider x and y 10.8-18.5
-        Spider age 4
+        Name this spider is Wannesa
+        Sex-Pol Female
+        Spider x and y 10.2-18.8
+        Spider age 8
 ```
 
 ---
