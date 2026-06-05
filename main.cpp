@@ -31,24 +31,24 @@ int main() {
 
     // Создание пользовательского паука с помощью ввода данных
     Spider user_spider;
-    std::cout << "Create your own spider:\n";
+    std::cout << "\nCreate your own spider:\n";
 
-    std::cout << "Enter spider name: ";
+    std::cout << "\tEnter spider name: ";
     std::cin >> user_spider.name;
 
-    std::cout << "Enter spider sex: ";
+    std::cout << "\tEnter spider sex: ";
     std::cin >> user_spider.sex;
 
-    std::cout << "Enter spider width (x): ";
+    std::cout << "\tEnter spider width (x): ";
     std::cin >> user_spider.x;
 
-    std::cout << "Enter spider height (y): ";
+    std::cout << "\tEnter spider height (y): ";
     std::cin >> user_spider.y;
 
-    std::cout << "Enter spider age: ";
+    std::cout << "\tEnter spider age: ";
     std::cin >> user_spider.age;
 
-    std::cout << "Your spider info:\n";
+    std::cout << "\nYour spider info:\n";
     print_spider_info(user_spider);
 
     return 0;
