@@ -25,13 +25,19 @@ struct Spider {
 };
 
 int main() {
-    std::cout << "Wasm-Spider" << std::endl;
+    std::cout << "Wasm-Spider\n";
 
-    Spider wasm_spider{"Male", 4.5, 5.0, 1, "Ed"};
-    std::cout << "\tName this spider is " << wasm_spider.name << std::endl;
-    std::cout << "\tSex-Pol " << wasm_spider.sex << std::endl;
-    std::cout << "\tSpider x and y " << wasm_spider.x << "-" << wasm_spider.y << std::endl;
-    std::cout << "\tSpider age " << wasm_spider.age << std::endl;
+    Spider wasm_spider{
+        .sex = "Male",
+        .x = 4.5,
+        .y = 5.2,
+        .age = 1,
+        .name = "Webby"
+    };
+    std::cout << "\tName this spider is " << wasm_spider.name << "\n";
+    std::cout << "\tSex-Pol " << wasm_spider.sex << "\n";
+    std::cout << "\tSpider x and y " << wasm_spider.x << "-" << wasm_spider.y << "\n";
+    std::cout << "\tSpider age " << wasm_spider.age << "\n";
 
     return 0;
 }
