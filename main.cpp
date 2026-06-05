@@ -12,7 +12,7 @@ struct Spider {
 void print_spider_info(const Spider& spider) {
     std::cout << "\tName this spider is " << spider.name << "\n";
     std::cout << "\tSex-Pol " << spider.sex << "\n";
-    std::cout << "\tSpider x and y " << spider.x << "-" << spider.y << "\n";
+    std::cout << "\tSpider x and y " << spider.x << " - " << spider.y << "\n";
     std::cout << "\tSpider age " << spider.age << "\n";
 }
 
