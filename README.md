@@ -29,7 +29,7 @@ struct Spider {
 void print_spider_info(const Spider& spider) {
     std::cout << "\tName this spider is " << spider.name << "\n";
     std::cout << "\tSex-Pol " << spider.sex << "\n";
-    std::cout << "\tSpider x and y " << spider.x << "-" << spider.y << "\n";
+    std::cout << "\tSpider x and y " << spider.x << " - " << spider.y << "\n";
     std::cout << "\tSpider age " << spider.age << "\n";
 }
 
@@ -90,7 +90,7 @@ g++ -std=c++20 main.cpp -o wasm_spider
 Wasm-Spider
         Name this spider is Webby
         Sex-Pol Male
-        Spider x and y 4.5-5.2
+        Spider x and y 4.5 - 5.2
         Spider age 1
 
 Create your own spider:
@@ -103,7 +103,7 @@ Create your own spider:
 Your spider info:
         Name this spider is Wannesa
         Sex-Pol Female
-        Spider x and y 10.2-18.8
+        Spider x and y 10.2 - 18.8
         Spider age 8
 ```
 
