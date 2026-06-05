@@ -3,7 +3,8 @@
 
 struct Spider {
     std::string sex{"Unknown"};
-    double x{0}, y{0};
+    double x{0.0};
+    double y{0.0};
     int age{0};
     std::string name{"NoName"};
 };
