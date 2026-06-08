@@ -31,24 +31,12 @@ struct Spider {
 void print_spider_info(const Spider& spider) {
     std::cout << "\tName this spider is " << spider.name << "\n";
     std::cout << "\tSex-Pol " << spider.sex << "\n";
-    std::cout << "\tSpider x and y " << spider.x << "-" << spider.y << "\n";
+    std::cout << "\tSpider x and y " << spider.x << " - " << spider.y << "\n";
     std::cout << "\tSpider age " << spider.age << "\n";
 }
 
-int main() {
-    std::cout << "Wasm-Spider\n";
-
-    //Мой первый паук, который созданный в коде
-    Spider wasm_spider{
-        .sex = "Male",
-        .x = 4.5,
-        .y = 5.2,
-        .age = 1,
-        .name = "Webby"
-    };
-    print_spider_info(wasm_spider);
-
-    // Создание пользовательского паука с помощью ввода данных
+// Процесс создания пользовательского паука
+Spider create_user_spider() {
     Spider user_spider;
     std::cout << "\nCreate your own spider:\n";
 
@@ -67,11 +55,30 @@ int main() {
     std::cout << "\tEnter spider age: ";
     std::cin >> user_spider.age;
 
+    return user_spider;
+}
+
+int main() {
+    std::cout << "Wasm-Spider\n";
+
+    //Мой первый паук, который созданный в коде
+    Spider wasm_spider{
+        .sex = "Male",
+        .x = 4.5,
+        .y = 5.2,
+        .age = 1,
+        .name = "Webby"
+    };
+    print_spider_info(wasm_spider);
+
+    // Создание пользовательского паука с помощью ввода данных
+    Spider user_spider = create_user_spider();
+
     std::cout << "\nYour spider info:\n";
     print_spider_info(user_spider);
 
     return 0;
-}}
+}
 ```
 
 ## Как скомпилировать и запустить
