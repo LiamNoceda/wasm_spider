@@ -37,6 +37,10 @@ struct Spider {
     int age{0};
     std::string name{"NoName"};
 };
+
+// Объявдяем функции из spider_fun
+void print_spider_info(const Spider& spider);
+Spider create_user_spider();
 ```
 
 ### spider_fun.cpp
@@ -80,10 +84,6 @@ Spider create_user_spider() {
 ```cpp
 #include <iostream>
 #include "spider.hpp"
-
-// Объявдяем функции из spider_fun
-void print_spider_info(const Spider& spider);
-Spider create_user_spider();
 
 int main() {
     std::cout << "Wasm-Spider\n";
