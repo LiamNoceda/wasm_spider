@@ -1,10 +1,6 @@
 #include <iostream>
 #include "spider.hpp"
 
-// Объявдяем функции из spider_fun
-void print_spider_info(const Spider& spider);
-Spider create_user_spider();
-
 int main() {
     std::cout << "Wasm-Spider\n";
 
